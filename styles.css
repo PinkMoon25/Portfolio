@@ -36,6 +36,9 @@ h1 {
   align-items: flex-start;
   gap: 12px;
   background-color: #1C1A19;
+  background-image: url(./Icons/illustration-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   padding: 120px 24px;
 }
 
