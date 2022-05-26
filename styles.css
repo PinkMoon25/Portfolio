@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+* {
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -86,4 +89,141 @@ a {
 
 a:hover {
   transform: scale(1.1) rotate(360deg);
+}
+
+.project-image {
+  width: 327px;
+  height: 237px;
+}
+
+.works,main {
+  padding: 120px 24px;
+}
+
+.title {
+  width: max-content;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+  text-align: center;
+}
+
+.multi-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.post-title {
+  font-family: 'Crete Round',sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.post-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.article-tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+
+.article-tags > li {
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  border: 1px solid #8993A4;
+}
+
+.article-btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffff;
+  background-color: #ff6b00;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+.project-card {
+  width: 327px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px;
+  background-image: url(./images/card_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-title {
+  padding: 8px 16px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+}
+
+.project-description {
+  padding: 8px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffff;
+}
+
+.project-tags {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-tags > li {
+  padding: 10px 12px;
+  font-family: 'Inter',sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  color: #ffff;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.project-btn {
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffff;
+  background-color: #ff6b00;
+  border: none;
+  letter-spacing: 0.03em;
 }
