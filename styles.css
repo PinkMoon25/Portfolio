@@ -5,14 +5,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 h1 {
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   color: #ffff;
-  margin: auto;
 }
 
 .header{
@@ -25,7 +24,6 @@ h1 {
 .dropdown{
   width: 24px;
   height: 24px;
-  margin: auto;
   color: #ffff;
   background: inherit;
   border: none;
@@ -33,16 +31,23 @@ h1 {
 }
 
 .headline{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
   background-color: #1C1A19;
+  padding: 120px 24px;
 }
 
 .primary-text{
+  margin: 0;
   color: #FF6B00;
   font-family: Crete Round, sans-serif;
   font-size: 56px;
 }
 
 .sub-text{
+  margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -50,18 +55,23 @@ h1 {
 }
 
 .description{
+  margin: 0;
   color: #ffff;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-}
-
-a{
-  text-decoration: none;
-  width: 18px;
-  height: 20px;
-  color: #FFF5E1;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 nav{
   display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+a{
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  color: #FFF5E1;
 }
