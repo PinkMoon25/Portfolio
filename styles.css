@@ -7,11 +7,13 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+.logo {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   color: #ffff;
+  width:fit-content;
+  line-height: 24px;
 }
 
 .header {
@@ -66,10 +68,12 @@ h1 {
   line-height: 24px;
 }
 
-nav {
+ul {
   display: flex;
   justify-content: center;
   gap: 8px;
+  list-style-type: none;
+  padding: 0;
 }
 
 a {
