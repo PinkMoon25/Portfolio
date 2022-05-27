@@ -99,7 +99,8 @@ a:hover {
   height: 237px;
 }
 
-.works,main {
+.works,
+main {
   padding: 120px 24px;
 }
 
@@ -124,7 +125,7 @@ a:hover {
 }
 
 .post-title {
-  font-family: 'Crete Round',sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -156,7 +157,7 @@ p {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
 }
 
 button {
@@ -174,7 +175,7 @@ button {
 
 button:hover {
   transform: scale(0.9);
-  opacity: 0.6
+  opacity: 0.6;
 }
 
 .projects {
@@ -220,7 +221,7 @@ button:hover {
 
 .project-tags > li {
   padding: 10px 12px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -251,7 +252,7 @@ button:hover {
   background-color: #1c1a19;
 }
 
-.about-top{
+.about-top {
   padding: 120px 24px;
   display: flex;
   flex-direction: column;
@@ -297,7 +298,7 @@ hr {
   line-height: 44px;
   color: #ffff;
   padding: 8px;
-  margin-bottom: 24px
+  margin-bottom: 24px;
 }
 
 .skill-card > ul {
