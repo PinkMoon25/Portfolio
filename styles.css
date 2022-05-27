@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+* {
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -14,6 +17,7 @@ body {
   color: #ffff;
   width: fit-content;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .header {
@@ -49,6 +53,9 @@ body {
   color: #ff6b00;
   font-family: Crete Round, sans-serif;
   font-size: 56px;
+  font-weight: 400px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
 }
 
 .sub-text {
@@ -71,19 +78,240 @@ body {
 ul {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   list-style-type: none;
   padding: 0;
 }
 
-a {
+i {
   text-decoration: none;
   width: 24px;
   height: 24px;
   color: #fff5e1;
-  transition: transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-a:hover {
+i:hover {
   transform: scale(1.1) rotate(360deg);
+}
+
+.project-image {
+  width: 327px;
+  height: 237px;
+}
+
+.works {
+  padding: 120px 24px;
+}
+
+.title {
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+  text-align: center;
+}
+
+.multi-post {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.post-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.post-description {
+  color: #091e42;
+}
+
+.article-tags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+
+.article-tags > li {
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  border: 1px solid #8993a4;
+}
+
+button {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffff;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  letter-spacing: 0.03em;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffff;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 24px;
+}
+
+.project-card {
+  width: 327px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px;
+  background-image: url(./images/card_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-title {
+  padding: 8px 16px;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+}
+
+.project-description {
+  padding: 8px 16px;
+  color: #ffff;
+}
+
+.project-tags {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-tags > li {
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  color: #ffff;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.project-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-description {
+  color: #f4f5f7;
+}
+
+.about-me {
+  background-color: #1c1a19;
+}
+
+.about-top {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background-image: url(./images/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+hr {
+  color: #212121;
+  margin: 24px;
+}
+
+.skills {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+}
+
+.icon.rectangle {
+  transform: rotate(-45deg);
+}
+
+.icon.circle {
+  border-radius: 50%;
+}
+
+.skill-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.skill-card > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 43px;
+  color: #ffff;
+  margin-bottom: 24px;
 }
