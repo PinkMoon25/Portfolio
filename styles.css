@@ -17,6 +17,7 @@ body {
   color: #ffff;
   width: fit-content;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .header {
@@ -77,20 +78,20 @@ body {
 ul {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   list-style-type: none;
   padding: 0;
 }
 
-a {
+i {
   text-decoration: none;
   width: 24px;
   height: 24px;
   color: #fff5e1;
-  transition: transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-a:hover {
+i:hover {
   transform: scale(1.1) rotate(360deg);
 }
 
@@ -99,13 +100,11 @@ a:hover {
   height: 237px;
 }
 
-.works,
-main {
+.works {
   padding: 120px 24px;
 }
 
 .title {
-  width: max-content;
   margin-bottom: 80px;
   padding-bottom: 40px;
   font-family: 'Crete Round', sans-serif;
@@ -118,6 +117,7 @@ main {
 }
 
 .multi-post {
+  width: 327px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -168,20 +168,22 @@ button {
   line-height: 24px;
   color: #ffff;
   background-color: #ff6b00;
-  border: none;
+  border: 1px solid #ff6b00;
   letter-spacing: 0.03em;
   transition: 0.25s ease-in-out;
 }
 
 button:hover {
-  transform: scale(0.9);
-  opacity: 0.6;
+  background-color: #ffff;
+  color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 .projects {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  place-items: center;
   gap: 24px;
 }
 
