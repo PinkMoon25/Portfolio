@@ -52,6 +52,9 @@ body {
   color: #ff6b00;
   font-family: Crete Round, sans-serif;
   font-size: 56px;
+  font-weight: 400px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
 }
 
 .sub-text {
@@ -128,11 +131,14 @@ a:hover {
   color: #091e42;
 }
 
-.post-description {
+p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.post-description {
   color: #091e42;
 }
 
@@ -153,7 +159,7 @@ a:hover {
   border: 1px solid #8993A4;
 }
 
-.article-btn {
+button {
   padding: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -163,6 +169,19 @@ a:hover {
   background-color: #ff6b00;
   border: none;
   letter-spacing: 0.03em;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.9);
+  opacity: 0.6
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 24px;
 }
 
 .project-card {
@@ -189,10 +208,6 @@ a:hover {
 
 .project-description {
   padding: 8px 16px;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
   color: #ffff;
 }
 
@@ -217,13 +232,83 @@ a:hover {
 .project-btn {
   width: 100%;
   text-align: center;
-  padding: 12px;
+}
+
+.about-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.about-description {
+  color: #f4f5f7;
+}
+
+.about-me {
+  background-color: #1c1a19;
+}
+
+.about-top{
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background-image: url(./images/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+hr {
+  color: #212121;
+  margin: 24px;
+}
+
+.skills {
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+}
+
+.icon.rectangle {
+  transform: rotate(-45deg);
+}
+
+.icon.circle {
+  border-radius: 50%;
+}
+
+.skill-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 32px;
+  line-height: 44px;
   color: #ffff;
-  background-color: #ff6b00;
-  border: none;
-  letter-spacing: 0.03em;
+  padding: 8px;
+  margin-bottom: 24px
+}
+
+.skill-card > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 43px;
+  color: #ffff;
+  margin-bottom: 24px;
 }
