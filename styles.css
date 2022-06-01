@@ -23,6 +23,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #3c3a39;
   padding: 25px;
 }
@@ -30,6 +31,7 @@ body {
 .dropdown {
   width: 24px;
   height: 24px;
+  padding: 0;
   color: #ffff;
   background: inherit;
   border: none;
