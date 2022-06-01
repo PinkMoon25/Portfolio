@@ -87,6 +87,7 @@ i {
   text-decoration: none;
   width: 24px;
   height: 24px;
+  font-size: 20px;
   color: #fff5e1;
   transition: 0.3s ease-in-out;
 }
@@ -314,4 +315,72 @@ hr {
   line-height: 43px;
   color: #ffff;
   margin-bottom: 24px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 58px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.contact-page > p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  border-style: none none solid none;
+  border-width: 1px;
+}
+
+textarea {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  color: #3c3a39;
+  background-color: #fbf8f7;
+}
+
+.bottom-navlinks {
+  padding: 28px;
+}
+
+.footer-links > i {
+  font-size: 24px;
+  color: #505f79;
+  font-weight: 700;
+}
+
+.home-icon {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
