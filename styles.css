@@ -345,11 +345,11 @@ form {
 }
 
 input {
-  width: 100%; 
+  width: 100%;
   display: flex;
   align-items: center;
   height: 48px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -360,7 +360,7 @@ input {
 
 textarea {
   padding: 12px;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
