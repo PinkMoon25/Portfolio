@@ -382,12 +382,13 @@ input {
 }
 
 textarea {
-  padding: 12px;
+  padding: 10px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   border: none;
+  border-radius: 10px;
   color: #3c3a39;
   background-color: #fbf8f7;
 }
@@ -555,5 +556,30 @@ textarea {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+  }
+
+  .contact-page {
+    padding: 130px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-page > p {
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: start;
+  }
+
+  input, textarea {
+    width: 684px;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  .home-icon {
+    display: none;
   }
 }
