@@ -8,12 +8,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 .logo {
   margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 18px;
+  font-weight: 700;
   color: #ffff;
   width: fit-content;
   line-height: 24px;
@@ -26,6 +28,16 @@ body {
   align-items: center;
   background-color: #3c3a39;
   padding: 25px;
+}
+
+.header-links {
+  display: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffff;
+  text-decoration: none;
 }
 
 .dropdown {
@@ -385,4 +397,78 @@ textarea {
   display: block;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px){
+  .headline {
+    width: 566px;
+    position: relative;
+    left: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 192px 0;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .container {
+    background-color: #1c1a19;
+    background-image: url(./images/Illustration-header.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+  }
+
+  .header {
+    justify-content: space-around;
+    padding: 26px 0;
+  }
+
+  .header-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .social-media > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .social-media {
+    position: absolute;
+    left: -100px;
+    top: 300px;
+  }
+
+  .primary-text {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .sub-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+
+  .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
