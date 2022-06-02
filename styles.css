@@ -115,7 +115,7 @@ i:hover {
 }
 
 @media screen and (min-width: 768px) {
-.project-image {
+  .project-image {
     width: 684px;
   }
 }
@@ -408,7 +408,7 @@ textarea {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .headline {
     width: 566px;
     position: relative;
@@ -496,8 +496,7 @@ textarea {
 
   .title-break {
     display: block;
-    height: 1px;
-    color: #212121;
+    border: 1px solid #212121;
     width: 60%;
   }
 
@@ -521,18 +520,20 @@ textarea {
     display: flex;
     flex-direction: column;
   }
-  
+
   .one {
     background-image: url(./images/project-card.png);
     background-size: contain;
   }
 
-  .two, .five {
+  .two,
+  .five {
     background-image: url(./images/project-card-1.png);
     background-size: contain;
   }
   
-  .four, .six {
+  .four,
+  .six {
     background-image: url(./images/project-card-2.png);
     background-size: contain;
   }
@@ -578,7 +579,8 @@ textarea {
     text-align: start;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 684px;
   }
 
