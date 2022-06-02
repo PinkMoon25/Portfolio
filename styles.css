@@ -213,7 +213,6 @@ button:hover {
 
 .project-card {
   width: 327px;
-  height: 386px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -525,11 +524,19 @@ textarea {
   
   .one {
     background-image: url(./images/project-card.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain;
+  }
+
+  .two, .five {
+    background-image: url(./images/project-card-1.png);
     background-size: contain;
   }
   
+  .four, .six {
+    background-image: url(./images/project-card-2.png);
+    background-size: contain;
+  }
+
   .about-top {
     position: relative;
     left: 142px;
