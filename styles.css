@@ -112,7 +112,12 @@ i:hover {
 
 .project-image {
   width: 327px;
-  height: 237px;
+}
+
+@media screen and (min-width: 768px) {
+.project-image {
+    width: 684px;
+  }
 }
 
 .works {
@@ -129,6 +134,10 @@ i:hover {
   color: #1c1a19;
   border-bottom: 1px solid #212121;
   text-align: center;
+}
+
+.title-break {
+  display: none;
 }
 
 .multi-post {
@@ -256,7 +265,7 @@ button:hover {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 72px;
-  line-height: 88px;
+  line-height: 82px;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
@@ -460,7 +469,7 @@ textarea {
     line-height: 44px;
   }
 
-  .description {
+  p {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
@@ -470,5 +479,81 @@ textarea {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .works {
+    padding: 130px 24px;
+  }
+
+  .title {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    color: #091e42;
+    border: none;
+  }
+
+  .title-break {
+    display: block;
+    height: 1px;
+    color: #212121;
+    width: 60%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+    justify-items: start;
+    padding: 0 100px;
+  }
+
+  .multi-post {
+    width: auto;
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .multi-post .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .one {
+    background-image: url(./images/project-card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .about-top {
+    position: relative;
+    left: 142px;
+    width: 566px;
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    background-image: none;
+  }
+
+  .about-me {
+    background-image: url(./images/Group.png);
+    background-repeat: no-repeat;
+    background-position: 100% 5%;
+  }
+
+  .about-break {
+    margin: 0 142px;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
