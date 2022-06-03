@@ -524,18 +524,25 @@ textarea {
   .one {
     background-image: url(./images/project-card.png);
     background-size: contain;
+    background-position: initial;
+  }
+
+  .three {
+    background-position: initial;
   }
 
   .two,
   .five {
     background-image: url(./images/project-card-1.png);
     background-size: contain;
+    background-position: initial;
   }
 
   .four,
   .six {
     background-image: url(./images/project-card-2.png);
     background-size: contain;
+    background-position: initial;
   }
 
   .about-top {
