@@ -405,6 +405,7 @@ input {
   color: #979493;
   border-style: none none solid none;
   border-width: 1px;
+  border-radius: 5px;
 }
 
 textarea {
