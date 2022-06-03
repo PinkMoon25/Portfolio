@@ -242,6 +242,11 @@ button:hover {
   background-image: url(./images/card_background.png);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
 }
 
 .project-title {
@@ -385,6 +390,7 @@ form {
   align-items: center;
   gap: 24px;
   padding: 0;
+  transition: 0.3s ease-in-out;
 }
 
 input {
@@ -411,6 +417,11 @@ textarea {
   border-radius: 10px;
   color: #3c3a39;
   background-color: #fbf8f7;
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(10px);
 }
 
 .bottom-navlinks {
