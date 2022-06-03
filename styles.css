@@ -51,6 +51,14 @@ body {
   line-height: 20px;
   color: #ffff;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.link-one:hover,
+.link-two:hover,
+.link-three:hover,
+.link-four:hover {
+  transform: scale(1.2);
 }
 
 .dropdown {
