@@ -9,31 +9,40 @@
   <title>Portfolio Page</title>
 </head>
 <body>
-  <header class="header">
-    <a href="#logo" rel="noopener" class="logo">Tushar Singh</a>
-    <button type="button" class="dropdown"> <img src="./Icons/Icon-Menu.svg" alt="Menu icon"> </button>
-  </header>
-  <section class="headline">
-    <h1 class="primary-text">Hey There. <br> I'm Tushar</h1>
-    <h3 class="sub-text">I am a Software Developer</h3>
-    <p class="description">I can help you build a product, feature or website.
-      Look through some of my work and experience! If you like what you see and have a project you need coded,
-      don't hestiate to contact me.</p>
-    <nav class="social-media" rel="noopener">
-      <ul>
-        <li> <a href="https://github.com/PinkMoon25" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a> </li>
-        <li> <a href="https://www.linkedin.com/in/tushar-singh-6b063a14b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a> </li>
-        <li> <a href="https://twitter.com/TusharS90674484" rel="noopener"><i class="fa-brands fa-twitter"></i></a> </li>
-        <li> <a href="#user-email" rel="noopener"><i class="fa-solid fa-m"></i></a> </li>
-        <li> <a href="#peace" rel="noopener"><i class="fa-solid fa-hand-peace"></i></a> </li>
+  <div class="container">
+    <header class="header">
+      <a href="#logo" rel="noopener" class="logo">Tushar Singh</a>
+      <button type="button" class="dropdown"> <img src="./Icons/Icon-Menu.svg" alt="Menu icon"> </button>
+      <ul class="header-links">
+        <li><a href="#portfolio" class="header-links">Portfolio</a></li>
+        <li><a href="#about" class="header-links">About</a></li>
+        <li><a href="#contact" class="header-links">Contact</a></li>
+        <li><a href="#user-text" class="header-links"><i class="fa-solid fa-envelope"></i></a></li>
       </ul>
-    </nav>
-  </section>
-  <div class="works">
-    <h1 class="title">My Recent Works</h1>
+    </header>
+    <section class="headline">
+      <h1 class="primary-text">Hey There. <br> I'm Tushar</h1>
+      <h3 class="sub-text">I am a Software Developer</h3>
+      <p class="description">I can help you build a product, feature or website.
+        Look through some of my work and experience! If you like what you see and have a project you need coded,
+        don't hestiate to contact me.</p>
+      <nav class="social-media" rel="noopener">
+        <ul>
+          <li> <a href="https://github.com/PinkMoon25" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a> </li>
+          <li> <a href="https://www.linkedin.com/in/tushar-singh-6b063a14b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+          <li> <a href="https://twitter.com/TusharS90674484" rel="noopener"><i class="fa-brands fa-twitter"></i></a> </li>
+          <li> <a href="#user-email" rel="noopener"><i class="fa-solid fa-m"></i></a> </li>
+          <li> <a href="#peace" rel="noopener"><i class="fa-solid fa-hand-peace"></i></a> </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+  <div class="works" id="portfolio">
+    <h1 class="title">My Recent Works <span class="title-break"></span></h1>
     <section class="projects">
       <article class="multi-post">
-        <img src="./images/ImgPlaceholder.png" alt="project image" class="project-image">
+        <img src="./images/multi-post.png" alt="project image" class="project-image">
+        <div class="multi-post content">
         <h1 class="post-title">Multi Post Stories</h1>
         <p class="post-description">A daily selection of privately personalized reads; no accounts or sign-ups required.
           has been the industry's standard dummy text ever since the 1500s, 
@@ -45,9 +54,9 @@
             <li>Ruby</li>
           </ul>
         <button type="button" class="article-btn">See Project</button>
+        </div>
       </article>
-
-      <div class="project-card">
+      <div class="project-card one">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -59,7 +68,7 @@
         </ul>
         <button type="button" class="project-btn">See Project</button>
       </div>
-      <div class="project-card">
+      <div class="project-card two">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -71,7 +80,7 @@
         </ul>
         <button type="button" class="project-btn">See Project</button>
       </div>
-      <div class="project-card">
+      <div class="project-card three">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -83,7 +92,7 @@
         </ul>
         <button type="button" class="project-btn">See Project</button>
       </div>
-      <div class="project-card">
+      <div class="project-card four">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -95,7 +104,7 @@
         </ul>
         <button type="button" class="project-btn">See Project</button>
       </div>
-      <div class="project-card">
+      <div class="project-card five">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -107,7 +116,7 @@
         </ul>
         <button type="button" class="project-btn">See Project</button>
       </div>
-      <div class="project-card">
+      <div class="project-card six">
         <h1 class="project-title">Professional Art Printing Data</h1>
         <p class="project-description">A daily selection of privately personalized reads; 
           no accounts or sign-ups required.
@@ -122,15 +131,15 @@
     </section>
   </div>
 
-  <section class="about-me">
+  <section class="about-me" id="about">
     <div class="about-top">
       <h1 class="about-title">About Me</h1>
       <p class="about-description">Hello I'm a software developer! 
-        I can help you build a product , feature or website Look through some of my work and experience! 
+        I can help you build a product , feature or website. Look through some of my work and experience! 
         If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
       <button type="button" class="about-btn">Get My Resume</button>
     </div>
-    <hr>
+    <hr class="about-break">
     <ul class="skills">
       <li class="skill-card">
         <div class="skill-title"><div class="icon rectangle"></div> Language</div>
@@ -164,7 +173,7 @@
     </ul>
   </section>
   <footer>
-    <section class="contact-page">
+    <section class="contact-page" id="contact">
       <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       <form action="https://formspree.io/f/myyoovzw" method="POST">
         <label for="user-name">
