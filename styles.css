@@ -20,6 +20,19 @@ body {
   width: fit-content;
   line-height: 24px;
   text-decoration: none;
+  animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .header {
@@ -38,6 +51,14 @@ body {
   line-height: 20px;
   color: #ffff;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.link-one:hover,
+.link-two:hover,
+.link-three:hover,
+.link-four:hover {
+  transform: scale(1.2);
 }
 
 .dropdown {
@@ -221,6 +242,11 @@ button:hover {
   background-image: url(./images/card_background.png);
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
 }
 
 .project-title {
@@ -364,6 +390,7 @@ form {
   align-items: center;
   gap: 24px;
   padding: 0;
+  transition: 0.3s ease-in-out;
 }
 
 input {
@@ -390,6 +417,11 @@ textarea {
   border-radius: 10px;
   color: #3c3a39;
   background-color: #fbf8f7;
+}
+
+input:hover,
+textarea:hover {
+  transform: translate(10px);
 }
 
 .bottom-navlinks {
