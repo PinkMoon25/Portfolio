@@ -20,6 +20,19 @@ body {
   width: fit-content;
   line-height: 24px;
   text-decoration: none;
+  animation-duration: 2.5s;
+  animation-name: spin;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 .header {
