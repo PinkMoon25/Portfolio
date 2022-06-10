@@ -425,6 +425,11 @@ textarea:hover {
   transform: translate(10px);
 }
 
+input:valid,
+textarea:valid {
+  border: 1px solid lightgreen;
+}
+
 .bottom-navlinks {
   padding: 28px;
 }
