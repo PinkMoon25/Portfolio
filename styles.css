@@ -69,6 +69,11 @@ body {
   background: inherit;
   border: none;
   font-size: large;
+  transition: 0.3s ease;
+}
+
+.dropdown:hover {
+  transform: scale(1.1);
 }
 
 .headline {
@@ -88,7 +93,7 @@ body {
   color: #ff6b00;
   font-family: Crete Round, sans-serif;
   font-size: 56px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 64px;
   letter-spacing: 0.37px;
 }
@@ -444,6 +449,50 @@ textarea:valid {
   display: block;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #3c3a39;
+}
+
+.modal-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.close-modal {
+  width: 100%;
+  text-align: end;
+}
+
+.modal-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 20px;
+  color: #ffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  border-bottom: 2px solid #6f6c6b;
+}
+
+.modal-links > li:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+  transform: skew(10deg);
 }
 
 @media screen and (min-width: 768px) {

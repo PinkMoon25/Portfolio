@@ -6,13 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/5ff773556d.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
   <title>Portfolio Page</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <a href="#logo" rel="noopener" class="logo">Tushar Singh</a>
-      <button type="button" class="dropdown"> <img src="./Icons/Icon-Menu.svg" alt="Menu icon"> </button>
+      <button type="button" class="dropdown"> <img src="./Icons/Icon-Menu.svg" alt="Menu icon" class="dropdown"> </button>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+          <ul class="modal-links">
+            <li><a href="#portfolio" class="modal-links">Portfolio</a></li>
+            <li><a href="#about" class="modal-links">About</a></li>
+            <li><a href="#contact" class="modal-links">Contact</a></li>
+          </ul>
+        </div>
+      </div>
       <ul class="header-links">
         <li><a href="#portfolio" class="header-links link-one">Portfolio</a></li>
         <li><a href="#about" class="header-links link-two">About</a></li>
