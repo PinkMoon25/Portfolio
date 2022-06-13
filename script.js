@@ -11,7 +11,7 @@ closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-for (let i = 0; i < links.length; i = i+1) {
+for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', () => {
     modal.style.display = 'none';
   });
