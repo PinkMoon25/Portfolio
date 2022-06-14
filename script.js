@@ -101,7 +101,7 @@ const popupArray = [
   },
 
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 1</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -117,7 +117,7 @@ const popupArray = [
   },
 
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 2</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -133,7 +133,7 @@ const popupArray = [
   },
   
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 3</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -149,7 +149,7 @@ const popupArray = [
   },
 
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 4</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -165,7 +165,7 @@ const popupArray = [
   },
 
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 5</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -181,7 +181,7 @@ const popupArray = [
   },
 
   {
-    name: `<h1 class="project-title">Professional Art Printing Data</h1>`,
+    name: `<h1 class="project-title">Professional Art Printing Data 6</h1>`,
     closeBtn: `<span class="close-popup"><i class="fa-solid fa-xmark"></i></span>`,
     technologies: `<ul class="project-tags">
     <li>html</li>
@@ -202,12 +202,14 @@ const popupContainer = document.createElement('div');
 const popupContent = document.createElement('article');
 
 function popup(i){
-  
+  popupContent.innerHTML = '';
     if( i == 0){
       Object.values(popupArray[0]).forEach(item => popupContent.innerHTML += item);      
     }
     else if( i == 1){
-      Object.values(popupArray[1]).forEach(item => popupContent.innerHTML += item);  
+      Object.values(popupArray[1]).forEach(item => {
+        popupContent.innerHTML += item;
+      });  
     }
     else if( i == 2){
       Object.values(popupArray[2]).forEach(item => popupContent.innerHTML += item);  
