@@ -515,6 +515,14 @@ textarea:valid {
   background-color: #ffffff;
 }
 
+.close-popup {
+  color:#1c1a19;
+  background-color: #1c1a19;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     width: 566px;
