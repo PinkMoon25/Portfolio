@@ -204,39 +204,25 @@ const popupContent = document.createElement('article');
 function popup(i){
   
     if( i == 0){
-      for (let item in popupArray[0]){
-        popupContent.innerHTML += popupArray[0][item];
-      }      
+      Object.values(popupArray[0]).forEach(item => popupContent.innerHTML += item);      
     }
     else if( i == 1){
-      for (let item in popupArray[1]){
-        popupContent.innerHTML += popupArray[1][item];
-      } 
+      Object.values(popupArray[1]).forEach(item => popupContent.innerHTML += item);  
     }
     else if( i == 2){
-      for (let item in popupArray[2]){
-        popupContent.innerHTML += popupArray[2][item];
-      } 
+      Object.values(popupArray[2]).forEach(item => popupContent.innerHTML += item);  
     }
     else if( i == 3){
-      for (let item in popupArray[3]){
-        popupContent.innerHTML += popupArray[3][item];
-      } 
+      Object.values(popupArray[3]).forEach(item => popupContent.innerHTML += item);  
     }
     else if( i == 4){
-      for (let item in popupArray[4]){
-        popupContent.innerHTML += popupArray[4][item];
-      } 
+      Object.values(popupArray[4]).forEach(item => popupContent.innerHTML += item); 
     }
     else if( i == 5){
-      for (let item in popupArray[5]){
-        popupContent.innerHTML += popupArray[5][item];
-      } 
+      Object.values(popupArray[5]).forEach(item => popupContent.innerHTML += item); 
     }
     else if( i == 6){
-      for (let item in popupArray[6]){
-        popupContent.innerHTML += popupArray[6][item];
-      } 
+      Object.values(popupArray[6]).forEach(item => popupContent.innerHTML += item); 
     }
   popupContainer.classList.add('popup-container');
   popupContent.classList.add('popup-content');
