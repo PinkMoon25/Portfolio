@@ -495,6 +495,26 @@ textarea:valid {
   transform: skew(10deg);
 }
 
+.popup-container {
+  display: none;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(151, 148, 147, 0.8)
+}
+
+.popup-content {
+  margin: 112px 142px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     width: 566px;
