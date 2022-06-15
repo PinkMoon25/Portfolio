@@ -803,7 +803,7 @@ article.popup-content > * {
 
   .popup-content > p {
     position: absolute;
-    right: 6%;
+    right: 2%;
     width: 35%;
     top: 26%;
     color: #344563;
@@ -830,11 +830,11 @@ article.popup-content > * {
 
   .popup-btn-live {
     bottom: 4%;
-    right: 31%;
+    right: 24%;
   }
 
   .project-btn.popup-btn-source {
     bottom: 4%;
-    right: 18%;
+    right: 10%;
   }
 }
