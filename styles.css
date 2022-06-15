@@ -497,6 +497,7 @@ textarea:valid {
 
 .popup-container {
   display: none;
+  margin: auto;
   text-align: center;
   width: 100vw;
   height: 100vh;
@@ -504,23 +505,21 @@ textarea:valid {
   left: 0;
   top: 0;
   z-index: 1;
-  background-color: rgba(151, 148, 147, 0.8)
+  background-color: rgba(151, 148, 147, 0.8);
 }
 
 .popup-content {
-  margin: 112px 142px;
+  margin: auto;
   padding: 25px;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .close-popup {
-  color:#1c1a19;
+  color: #1c1a19;
   background-color: #1c1a19;
-  position: absolute;
-  right: 5%;
-  top: 5%;
 }
 
 @media screen and (min-width: 768px) {
