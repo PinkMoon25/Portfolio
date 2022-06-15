@@ -504,8 +504,6 @@ textarea:valid {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 100vw;
-  min-height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
@@ -520,7 +518,8 @@ article.popup-content > * {
 }
 
 .popup-content {
-  margin: 12px;
+  position: relative;
+  margin: 30px 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -531,7 +530,7 @@ article.popup-content > * {
 
 .close-popup > i {
   position: absolute;
-  top: 8%;
+  top: 5%;
   right: 5%;
   color: black;
 }
@@ -570,7 +569,7 @@ article.popup-content > * {
 
 .project-btn.popup-btn-source {
   position: absolute;
-  bottom: 6%;
+  bottom: 3%;
   right: 15%;
 }
 
@@ -768,6 +767,11 @@ article.popup-content > * {
   article.popup-content > * {
     margin: 0;
     padding: 0;
+  }
+
+  .popup-container {
+    width: 100vw;
+    height: 100vh;
   }
 
   .popup-content {
