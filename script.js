@@ -91,7 +91,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 1',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/project-card.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -105,7 +105,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 2',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/card_background.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -119,7 +119,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 3',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/card_background.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -133,7 +133,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 4',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/card_background.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -147,7 +147,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 5',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/card_background.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -161,7 +161,7 @@ const popupArray = [
     name: 'Professional Art Printing Data 6',
     technologies: ['html', 'bootstrap', 'Ruby'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/card_background.png',
       imageAlt: 'project image',
     },
     description: `A daily selection of privately personalized reads 
@@ -177,6 +177,8 @@ const popupContainer = document.createElement('div');
 const popupContent = document.createElement('article');
 
 function popup(i) {
+  popupContent.innerHTML = '';
+
   popupContainer.classList.add('popup-container');
   popupContent.classList.add('popup-content');
   popupContainer.appendChild(popupContent);
@@ -207,12 +209,12 @@ function popup(i) {
   popupContent.appendChild(para);
 
   const buttonLive = document.createElement('button');
-  buttonLive.classList.add('project-btn', 'popup-btn');
+  buttonLive.classList.add('project-btn', 'popup-btn-live');
   buttonLive.setAttribute('type', 'button');
   popupContent.appendChild(buttonLive);
 
   const buttonSource = document.createElement('button');
-  buttonSource.classList.add('project-btn', 'popup-btn');
+  buttonSource.classList.add('project-btn', 'popup-btn-source');
   buttonSource.setAttribute('type', 'button');
   popupContent.appendChild(buttonSource);
 
@@ -225,7 +227,6 @@ function popup(i) {
   sourceLink.classList.add('popupLink');
   sourceLink.textContent = 'See Source';
   buttonSource.appendChild(sourceLink);
-  // <img src="./Icons/Iconlive.png">
 
   const btnIcon = document.createElement('img');
   btnIcon.setAttribute('src', 'Icons/Iconlive.png');
@@ -266,7 +267,7 @@ const buttonSix = document.querySelector('.six .project-btn');
 
 articleBtn.addEventListener('click', () => {
   popup(0);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -275,7 +276,7 @@ articleBtn.addEventListener('click', () => {
 
 buttonOne.addEventListener('click', () => {
   popup(1);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -284,7 +285,7 @@ buttonOne.addEventListener('click', () => {
 
 buttonTwo.addEventListener('click', () => {
   popup(2);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -293,7 +294,7 @@ buttonTwo.addEventListener('click', () => {
 
 buttonThree.addEventListener('click', () => {
   popup(3);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -302,7 +303,7 @@ buttonThree.addEventListener('click', () => {
 
 buttonFour.addEventListener('click', () => {
   popup(4);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -311,7 +312,7 @@ buttonFour.addEventListener('click', () => {
 
 buttonFive.addEventListener('click', () => {
   popup(5);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -320,7 +321,7 @@ buttonFive.addEventListener('click', () => {
 
 buttonSix.addEventListener('click', () => {
   popup(6);
-  popupContainer.style.display = 'block';
+  popupContainer.style.display = 'flex';
   const closePopup = document.querySelector('.close-popup');
   closePopup.addEventListener('click', () => {
     popupContainer.style.display = 'none';
