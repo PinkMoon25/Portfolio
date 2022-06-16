@@ -5,35 +5,31 @@ message.classList.add('form-message');
 
 form.appendChild(message);
 
-function validateEmail(){
+function validateEmail() {
+  const regex = /^[a-z0-9@.]+$/;
 
-  let regex = /^[a-z0-9@.]+$/;
-
-  if(email.value.trim() === '') {
-    message.textContent = "Please enter your email-address";
+  if (email.value.trim() === '') {
+    message.textContent = 'Please enter your email-address';
     email.classList.remove('success');
     email.classList.add('error');
     return false;
   }
-  else if (regex.test(email.value.trim()) === false) {
-    message.textContent = "Please use smallcase letters for email-address";
+  if (regex.test(email.value.trim()) === false) {
+    message.textContent = 'Please use smallcase letters for email-address';
     email.classList.remove('success');
     email.classList.add('error');
     return false;
   }
-  else {
-    email.classList.remove('error');
-    email.classList.add('success');
-    return true;
-  }
+
+  email.classList.remove('error');
+  email.classList.add('success');
+  return true;
 }
 
 form.addEventListener('submit', (e) => {
-
   e.preventDefault();
 
-  if(validateEmail()){
+  if (validateEmail()) {
     form.submit();
-  }
-  else validateEmail();
-})
+  } else validateEmail();
+});
