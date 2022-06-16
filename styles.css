@@ -430,7 +430,7 @@ textarea:hover {
   transform: translate(10px);
 }
 
-input:valid,
+#user-name:valid,
 textarea:valid {
   border: 1px solid lightgreen;
 }
@@ -838,5 +838,20 @@ article.popup-content > * {
   .project-btn.popup-btn-source {
     bottom: 4%;
     right: 10%;
+  }
+
+  .form-message {
+    color: rgb(241, 10, 10);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+
+  .success {
+    border: 1px solid lightgreen;
   }
 }
