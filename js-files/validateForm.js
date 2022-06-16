@@ -10,21 +10,24 @@ function validateEmail() {
 
   if (email.value.trim() === '') {
     message.textContent = 'Please enter your email-address';
-    email.classList.remove('success');
     email.classList.add('error');
     return false;
   }
   if (regex.test(email.value.trim()) === false) {
     message.textContent = 'Please use smallcase letters for email-address';
-    email.classList.remove('success');
     email.classList.add('error');
     return false;
   }
 
   email.classList.remove('error');
-  email.classList.add('success');
   return true;
 }
+
+email.addEventListener('change', () => {
+  if (validateEmail()) {
+    validateEmail();
+  }
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();

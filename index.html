@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/5ff773556d.js" crossorigin="anonymous"></script>
-  <script src="script.js" defer></script>
-  <script src="./validateForm.js" defer></script>
+  <script src="./js-files/script.js" defer></script>
+  <script src="./js-files/validateForm.js" defer></script>
+  <script src="./js-files/localStorage.js" defer></script>
   <title>Portfolio Page</title>
 </head>
 <body>
@@ -101,16 +102,19 @@
     <section class="contact-page" id="contact">
       <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       <form action="https://formspree.io/f/myyoovzw" method="POST">
-        <label for="user-name">
+        <label for="user-name"> Name:
           <input type="text" id="user-name" placeholder="Full name" name="user-name" maxlength="30" size="30" required>
         </label>
-        <label for="user-email">
+        <label for="user-email"> Email:
           <input type="email" id="user-email" placeholder="Email address" size="30" name="user-email" required>
         </label>
-        <label for="user-text">
+        <label for="user-text"> Comment:
           <textarea id="user-text" maxlength="500" cols="30" rows="5" name="user-text" placeholder="Enter text here" required></textarea>
         </label>
-        <button type="submit">Get in touch</button> 
+        <div>
+          <button type="submit">Get in touch</button>
+          <button type="button" class="form-reset">Reset form</button>
+        </div> 
       </form>
     </section>
     <footer>

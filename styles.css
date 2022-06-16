@@ -398,6 +398,11 @@ form {
   transition: 0.3s ease-in-out;
 }
 
+label {
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+}
+
 input {
   width: 100%;
   display: flex;
@@ -407,7 +412,6 @@ input {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #979493;
   border-style: none none solid none;
   border-width: 1px;
   border-radius: 5px;
@@ -430,9 +434,20 @@ textarea:hover {
   transform: translate(10px);
 }
 
-#user-name:valid,
+input:valid,
 textarea:valid {
   border: 1px solid lightgreen;
+}
+
+#user-email.error {
+  border: 1px solid red;
+}
+
+.form-message {
+  color: rgb(241, 10, 10);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bottom-navlinks {
@@ -771,11 +786,6 @@ article.popup-content > * {
     padding: 0;
   }
 
-  /* .popup-container {
-    width: 100vw;
-    height: 100vh;
-  } */
-
   .popup-content {
     position: relative;
     width: 80%;
@@ -838,20 +848,5 @@ article.popup-content > * {
   .project-btn.popup-btn-source {
     bottom: 4%;
     right: 10%;
-  }
-
-  .form-message {
-    color: rgb(241, 10, 10);
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .error {
-    border: 1px solid red;
-  }
-
-  .success {
-    border: 1px solid lightgreen;
   }
 }
