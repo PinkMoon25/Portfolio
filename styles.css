@@ -575,6 +575,21 @@ article.popup-content > * {
   right: 15%;
 }
 
+.form-message {
+  color: rgb(241, 10, 10);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid lightgreen;
+}
+
 @media screen and (min-width: 768px) {
   .headline {
     width: 566px;
@@ -771,11 +786,6 @@ article.popup-content > * {
     padding: 0;
   }
 
-  /* .popup-container {
-    width: 100vw;
-    height: 100vh;
-  } */
-
   .popup-content {
     position: relative;
     width: 80%;
@@ -838,20 +848,5 @@ article.popup-content > * {
   .project-btn.popup-btn-source {
     bottom: 4%;
     right: 10%;
-  }
-
-  .form-message {
-    color: rgb(241, 10, 10);
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .error {
-    border: 1px solid red;
-  }
-
-  .success {
-    border: 1px solid lightgreen;
   }
 }
