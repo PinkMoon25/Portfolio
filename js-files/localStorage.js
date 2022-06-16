@@ -4,25 +4,24 @@ const userText = document.getElementById('user-text');
 const contactForm = document.querySelector('form');
 const resetBtn = document.querySelector('.form-reset');
 
-function storeFormData(){
+function storeFormData() {
   const formData = {
     name: userName.value,
     email: userEmail.value,
-    text: userText.value
+    text: userText.value,
   };
-  localStorage.setItem('form',JSON.stringify(formData));
+  localStorage.setItem('form', JSON.stringify(formData));
 }
 
 contactForm.addEventListener('change', storeFormData);
 
-function populateForm(){
+function populateForm() {
   const getData = JSON.parse(localStorage.getItem('form'));
-  if(getData === null) return;
-  else{
-    userName.value = getData.name;
-    userEmail.value = getData.email;
-    userText.value = getData.text;
-  }
+  if (getData === null) return;
+
+  userName.value = getData.name;
+  userEmail.value = getData.email;
+  userText.value = getData.text;
 }
 
 document.addEventListener('DOMContentLoaded', populateForm);

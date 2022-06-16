@@ -21,13 +21,12 @@ function validateEmail() {
 
   email.classList.remove('error');
   return true;
-};
+}
 
 email.addEventListener('change', () => {
-  if(validateEmail()){
-    validateEmail
+  if (validateEmail()) {
+    validateEmail();
   }
-  return
 });
 
 form.addEventListener('submit', (e) => {
