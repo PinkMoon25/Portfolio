@@ -501,6 +501,8 @@ textarea:valid {
 }
 
 .popup-container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -769,10 +771,10 @@ article.popup-content > * {
     padding: 0;
   }
 
-  .popup-container {
+  /* .popup-container {
     width: 100vw;
     height: 100vh;
-  }
+  } */
 
   .popup-content {
     position: relative;
@@ -830,11 +832,11 @@ article.popup-content > * {
 
   .popup-btn-live {
     bottom: 4%;
-    right: 31%;
+    right: 24%;
   }
 
   .project-btn.popup-btn-source {
     bottom: 4%;
-    right: 18%;
+    right: 10%;
   }
 }
