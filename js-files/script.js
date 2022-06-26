@@ -21,17 +21,16 @@ const projects = document.querySelector('.projects');
 
 const article = document.createElement('article');
 article.classList.add('multi-post');
-article.innerHTML = `<img src='./images/multi-post.png' alt='project image' class='project-image'>
+article.innerHTML = `<img src='./images/devHome' alt='project image' class='project-image'>
 <div class='multi-post content'>
-<h1 class='post-title'>Multi Post Stories</h1>
-<p class='post-description'>A daily selection of privately personalized reads; no accounts or sign-ups required.
-  has been the industry's standard dummy text ever since the 1500s, 
-  when an unknown printer took a standard dummy text.</p>
+<h1 class='post-title'>devHome</h1>
+<p class='post-description'>devHome is an open-source learning platform for things related to Web.
+We work towards sharing information & knowledge to make it availaible to everyone, everywhere.<br>
+<em>All it's gonna take is your time and effort</em>.</p>
   <ul class='article-tags'>
     <li>Css</li>
-    <li>html</li>
-    <li>bootstrap</li>
-    <li>Ruby</li>
+    <li>Html</li>
+    <li>JavaScript</li>
   </ul>
 <button type='button' class='article-btn'>See Project</button>
 </div>`;
@@ -74,17 +73,17 @@ addProjectCards();
 
 const popupArray = [
   {
-    name: 'Multi Post Stories',
-    technologies: ['Css', 'html', 'bootstrap', 'Ruby'],
+    name: 'devHome',
+    technologies: ['Css', 'Html', 'JavaScript'],
     image: {
-      imageSrc: './images/multi-post.png',
+      imageSrc: './images/devHome',
       imageAlt: 'project image',
     },
-    description: `A daily selection of privately personalized reads; no accounts or sign-ups required.
-    has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a standard dummy text.`,
-    live: 'https://pinkmoon25.github.io/Portfolio/',
-    Source: 'https://github.com/PinkMoon25/Portfolio',
+    description: `devHome is an open-source learning platform for things related to Web.
+    We work towards sharing information & knowledge to make it availaible to everyone, everywhere.<br>
+    <em>All it's gonna take is your time and effort.</em>`,
+    live: 'https://pinkmoon25.github.io/Capstone-project-Website/',
+    Source: 'https://github.com/PinkMoon25/Capstone-project-Website',
   },
 
   {
@@ -250,7 +249,7 @@ function popup(i) {
   image.setAttribute('src', `${popupArray[i].image.imageSrc}`);
   image.setAttribute('alt', `${popupArray[i].image.imageAlt}`);
 
-  para.textContent = popupArray[i].description;
+  para.innerHTML = popupArray[i].description;
 
   liveLink.setAttribute('href', `${popupArray[i].live}`);
 
