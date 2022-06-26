@@ -11,6 +11,10 @@ body {
   position: relative;
 }
 
+.logo-img {
+  width: 80px;
+}
+
 .logo {
   animation-duration: 2.5s;
   animation-name: spin;
@@ -32,7 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
-  padding: 20px;
+  padding: 12px 25px;
 }
 
 .header-links {
@@ -74,6 +78,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+  border-radius: 0 0 50px 50px;
   background-color: #1c1a19;
   background-image: url(./Icons/illustration-header-mobile.png);
   background-repeat: no-repeat;
@@ -298,7 +303,7 @@ button:hover {
 }
 
 .about-me {
-  border-radius: 0 10% 10% 0;
+  border-radius: 50px;
   background-color: #1c1a19;
 }
 
@@ -518,7 +523,6 @@ textarea:valid {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
   background: rgba(151, 148, 147, 0.8);
 }
 
@@ -600,7 +604,7 @@ article.popup-content > * {
 
   .container {
     height: 100vh;
-    border-radius: 0 0 15% 0;
+    border-radius: 0 0 120px 0;
     background-color: #1c1a19;
     background-image: url(./images/Illustration-header.png);
     background-repeat: no-repeat;
@@ -724,6 +728,7 @@ article.popup-content > * {
   }
 
   .about-me {
+    border-radius: 0 100px 100px 0;
     background-image: url(./images/Group.png);
     background-repeat: no-repeat;
     background-position: 100% 15%;
@@ -772,12 +777,13 @@ article.popup-content > * {
 
   .popup-content {
     position: relative;
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     padding: 25px;
+    border-radius: 24px;
     background-color: #fff;
   }
 
@@ -799,16 +805,15 @@ article.popup-content > * {
 
   .popup-content > p {
     position: absolute;
-    right: 6%;
+    right: 2%;
     width: 35%;
     top: 26%;
     color: #344563;
   }
 
   .popup-content > img {
-    width: 659px;
-    height: 448px;
-    padding-top: 30px;
+    width: 60%;
+    height: 450px;
   }
 
   .popup-content > button {
@@ -825,13 +830,13 @@ article.popup-content > * {
   }
 
   .popup-btn-live {
-    bottom: 4%;
+    bottom: 5%;
     right: 24%;
   }
 
   .project-btn.popup-btn-source {
-    bottom: 4%;
-    right: 10%;
+    bottom: 5%;
+    right: 8%;
   }
 }
 
