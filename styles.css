@@ -12,14 +12,6 @@ body {
 }
 
 .logo {
-  margin: 0;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffff;
-  width: fit-content;
-  line-height: 24px;
-  text-decoration: none;
   animation-duration: 2.5s;
   animation-name: spin;
   animation-iteration-count: 1;
@@ -40,25 +32,26 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
-  padding: 25px;
+  padding: 20px;
 }
 
 .header-links {
   display: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   color: #ffff;
   text-decoration: none;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .link-one:hover,
 .link-two:hover,
 .link-three:hover,
 .link-four:hover {
-  transform: scale(1.2);
+  transform: scale(1.1) skew(15deg);
+  border-bottom: 1px solid #ff6b00;
 }
 
 .dropdown {
@@ -138,13 +131,8 @@ i:hover {
 
 .project-image {
   width: 100%;
+  border-radius: 5%;
 }
-
-/* @media screen and (min-width: 768px) {
-  .project-image {
-    width: 100%;
-  }
-} */
 
 .works {
   padding: 80px 24px;
@@ -219,6 +207,7 @@ button {
   color: #ffff;
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
+  border-radius: 8px;
   letter-spacing: 0.03em;
   transition: 0.25s ease-in-out;
 }
@@ -238,7 +227,7 @@ button:hover {
 }
 
 .project-card {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -248,6 +237,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 5%;
   transition: 0.3s ease-in-out;
 }
 
@@ -290,6 +280,8 @@ button:hover {
 .project-btn {
   width: 100%;
   text-align: center;
+  border: none;
+  border-radius: 8px;
 }
 
 .about-title {
@@ -306,6 +298,7 @@ button:hover {
 }
 
 .about-me {
+  border-radius: 0 10% 10% 0;
   background-color: #1c1a19;
 }
 
@@ -606,6 +599,8 @@ article.popup-content > * {
   }
 
   .container {
+    height: 100vh;
+    border-radius: 0 0 15% 0;
     background-color: #1c1a19;
     background-image: url(./images/Illustration-header.png);
     background-repeat: no-repeat;
@@ -615,7 +610,7 @@ article.popup-content > * {
 
   .header {
     justify-content: space-around;
-    padding: 26px 0;
+    padding: 12px 0;
   }
 
   .header-links {
@@ -659,12 +654,6 @@ article.popup-content > * {
     line-height: 32px;
   }
 
-  .logo {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .works {
     padding: 100px 5%;
   }
@@ -691,6 +680,10 @@ article.popup-content > * {
     grid-template-rows: auto;
     row-gap: 24px;
     column-gap: 0;
+  }
+
+  .project-card {
+    width: 75%
   }
 
   .multi-post {
@@ -845,6 +838,10 @@ article.popup-content > * {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .projects {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card {
+    width: 80%;
   }
 
   .multi-post {
