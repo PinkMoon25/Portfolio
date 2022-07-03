@@ -37,40 +37,6 @@ We work towards sharing information & knowledge to make it availaible to everyon
 
 projects.appendChild(article);
 
-function addProjectCards() {
-  for (let i = 0; i < 6; i += 1) {
-    const div = document.createElement('div');
-    div.classList.add('project-card');
-    if (i === 0) {
-      div.classList.add('one');
-    } else if (i === 1) {
-      div.classList.add('two');
-    } else if (i === 2) {
-      div.classList.add('three');
-    } else if (i === 3) {
-      div.classList.add('four');
-    } else if (i === 4) {
-      div.classList.add('five');
-    } else if (i === 5) {
-      div.classList.add('six');
-    }
-
-    div.innerHTML = `<h1 class='project-title'>Professional Art Printing Data</h1>
-    <p class='project-description'>A daily selection of privately personalized reads; 
-      no accounts or sign-ups required.
-      has been the industry's standard</p>
-    <ul class='project-tags'>
-      <li>html</li>
-      <li>bootstrap</li>
-      <li>Ruby</li>
-    </ul>
-    <button type='button' class='project-btn'>See Project</button>`;
-    projects.appendChild(div);
-  }
-}
-
-addProjectCards();
-
 const popupArray = [
   {
     name: 'devHome',
@@ -87,17 +53,15 @@ const popupArray = [
   },
 
   {
-    name: 'Professional Art Printing Data 1',
-    technologies: ['html', 'bootstrap', 'Ruby'],
+    name: 'BookList',
+    technologies: ['Html', 'JavaScript', 'Css'],
     image: {
-      imageSrc: './images/project-card.png',
+      imageSrc: './images/Booklist1.png',
       imageAlt: 'project image',
     },
-    description: `A daily selection of privately personalized reads 
-    no accounts or sign-ups required.
-    has been the industry's standard`,
-    live: 'https://pinkmoon25.github.io/Portfolio/',
-    Source: 'https://github.com/PinkMoon25/Portfolio',
+    description: `A single page application, Booklist. To help you find and remember the best books you read.`,
+    live: 'https://pinkmoon25.github.io/books-website/',
+    Source: 'https://github.com/PinkMoon25/books-website',
   },
 
   {
@@ -171,6 +135,38 @@ const popupArray = [
   },
 ];
 
+function addProjectCards() {
+  for (let i = 1; i < 7; i += 1) {
+    const div = document.createElement('div');
+    div.classList.add('project-card');
+    if (i === 1) {
+      div.classList.add('one');
+    } else if (i === 2) {
+      div.classList.add('two');
+    } else if (i === 3) {
+      div.classList.add('three');
+    } else if (i === 4) {
+      div.classList.add('four');
+    } else if (i === 5) {
+      div.classList.add('five');
+    } else if (i === 6) {
+      div.classList.add('six');
+    }
+
+    div.innerHTML = `<h1 class='project-title'>${popupArray[i].name}</h1>
+    <p class='project-description'> ${popupArray[i].description} </p>
+    <ul class='project-tags'>
+      <li>Html</li>
+      <li>JavaScript</li>
+      <li>Css</li>
+    </ul>
+    <button type='button' class='project-btn'>See Project</button>`;
+    projects.appendChild(div);
+  }
+}
+
+addProjectCards();
+
 const body = document.querySelector('body');
 const popupContainer = document.createElement('div');
 const popupContent = document.createElement('article');
@@ -200,7 +196,7 @@ function popup(i) {
   popupContent.appendChild(ul);
 
   const image = document.createElement('img');
-  image.classList.add('project-image');
+  image.classList.add('project-image', 'modal-img');
   popupContent.appendChild(image);
 
   const para = document.createElement('p');

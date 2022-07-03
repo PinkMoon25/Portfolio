@@ -78,7 +78,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  border-radius: 0 0 50px 50px;
   background-color: #1c1a19;
   background-image: url(./Icons/illustration-header-mobile.png);
   background-repeat: no-repeat;
@@ -137,8 +136,8 @@ i:hover {
 .project-image {
   width: 100%;
   box-sizing: border-box;
-  border: 3.5vw solid #e65242;
-  border-radius: 5%;
+  border: 3.2vw solid #e65242;
+  border-radius: 2%;
 }
 
 .works {
@@ -147,7 +146,6 @@ i:hover {
 
 .title {
   margin-bottom: 80px;
-  padding-bottom: 40px;
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -214,7 +212,7 @@ button {
   color: #ffff;
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
-  border-radius: 8px;
+  border-radius: 5px;
   letter-spacing: 0.03em;
   transition: 0.25s ease-in-out;
 }
@@ -237,15 +235,20 @@ button:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
   background-image: url(./images/card_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 5%;
+  border-radius: 2%;
   transition: 0.3s ease-in-out;
+}
+
+.one {
+  background-image: url(./images/Booklist1.png);
+  background-size: contain;
 }
 
 .project-card:hover {
@@ -288,7 +291,7 @@ button:hover {
   width: 100%;
   text-align: center;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .about-title {
@@ -305,7 +308,6 @@ button:hover {
 }
 
 .about-me {
-  border-radius: 50px;
   background-color: #1c1a19;
 }
 
@@ -606,7 +608,6 @@ article.popup-content > * {
 
   .container {
     height: 100vh;
-    border-radius: 0 0 120px 0;
     background-color: #1c1a19;
     background-image: url(./images/Illustration-header.png);
     background-repeat: no-repeat;
@@ -704,7 +705,9 @@ article.popup-content > * {
   }
 
   .one {
-    background-image: url(./images/project-card.png);
+    background-image: url(./images/Booklist1.png);
+    background-size: contain;
+    border: 2px solid rebeccapurple;
   }
 
   .two,
@@ -730,7 +733,6 @@ article.popup-content > * {
   }
 
   .about-me {
-    border-radius: 0 100px 100px 0;
     background-image: url(./images/Group.png);
     background-repeat: no-repeat;
     background-position: 100% 15%;
@@ -849,6 +851,7 @@ article.popup-content > * {
 
   .project-card {
     width: 80%;
+    height: 100%;
   }
 
   .multi-post {
