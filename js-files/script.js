@@ -56,7 +56,7 @@ const popupArray = [
     name: 'BookList',
     technologies: ['Html', 'JavaScript', 'Css'],
     image: {
-      imageSrc: './images/Booklist1.png',
+      imageSrc: './images/booklist.png',
       imageAlt: 'project image',
     },
     description: `A single page application, Booklist. To help you find and remember the best books you read.`,

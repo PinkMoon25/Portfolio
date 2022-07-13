@@ -247,8 +247,8 @@ button:hover {
 }
 
 .one {
-  background-image: url(./images/Booklist1.png);
-  background-size: contain;
+  background-image: url(./images/booklist.png);
+  background-size: cover;
 }
 
 .project-card:hover {
@@ -705,9 +705,8 @@ article.popup-content > * {
   }
 
   .one {
-    background-image: url(./images/Booklist1.png);
-    background-size: contain;
-    border: 2px solid rebeccapurple;
+    background-image: url(./images/booklist.png);
+    background-size: cover;
   }
 
   .two,
